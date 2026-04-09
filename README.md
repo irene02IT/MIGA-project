@@ -1,10 +1,10 @@
 # 🇬🇧 Project on Computational Methods for Business Management Course (Università di Milano Bicocca)
 
-## Development of a recommender system based
+Development of a recommender system based
 on collaborative filtering and content-based filtering using data from the Amazon Reviews 2023 dataset (Books subcategory).
 
 ## Project Structure
-
+```
 src/
 │
 ├── collaborative_filtering/
@@ -31,27 +31,37 @@ data/
 │
 outputs/
     ├── *** model outputs ***
-
+```
 ---
 
 ## Requirements
 
 - Required Python version: Python 3.12
   To check:
+```
   python --version
+```
 
 ### Recommended Solution
 1. Create a virtualenv with Python 3.12:
+```
    python3.12 -m venv .venv
+```
 
 2. Activate it:
    - macOS/Linux:
+   ```
      source .venv/bin/activate
+   ```
    - Windows PowerShell:
+   ```
      .venv\Scripts\Activate.ps1
+   ```
 
 3. Install the dependencies:
+```
    pip install -r requirements.txt
+```
 
 ---
 
@@ -64,19 +74,26 @@ outputs/
 2. Run the main modules from the terminal:
 
    (1) Exploratory Analysis (EA)
+   ```
        python -m src.collaborative_filtering.exploratory_analysis
+   ```
 
    (2) Collaborative Filtering (CF) Model
-
+   ```bash
+       python -m src.collaborative_filtering.main
+   ```
+   (3) Content-Based (CB) Model
+   ```
+       python -m src.content_based.main
+   ```
 ---
 
 # 🇮🇹 Progetto del corso di Metodi informatici per la gestione aziendale (Università di Milano Bicocca)
 
-## Sviluppo di un Recommender system basato
-su Collaborative Filtering e content-based a partire da dati contenuti nel dataset Amazon Reviews 2023 (sottocategoria Books).
+Sviluppo di un Recommender system basato su Collaborative Filtering e content-based a partire da dati contenuti nel dataset Amazon Reviews 2023 (sottocategoria Books).
 
 ## Struttura del progetto
-
+```
 src/
 │
 ├── collaborative_filtering/
@@ -103,7 +120,7 @@ data/
 │
 outputs/
     ├── *** outputs dei modelli ***
-
+```
 ---
 
 ## Requisiti
@@ -114,7 +131,9 @@ outputs/
 
 ### Soluzione consigliata
 1. Creare un virtualenv con Python 3.12:
+```
    python3.12 -m venv .venv
+```
 
 2. Attivarlo:
    - macOS/Linux:
@@ -123,8 +142,9 @@ outputs/
      .venv\Scripts\Activate.ps1
 
 3. Installare le dipendenze:
+```
    pip install -r requirements.txt
-
+```
 ---
 
 ## Esecuzione del progetto
@@ -136,10 +156,14 @@ outputs/
 2. Eseguire i moduli principali da terminale:
 
    (1) Analisi Esplorativa (EA)
+   ```bash
        python -m src.collaborative_filtering.exploratory_analysis
-
+   ```
    (2) Modello Collaborative Filtering (CF)
+   ```bash
        python -m src.collaborative_filtering.main
-
+   ```
    (3) Modello Content-Based (CB)
+   ```
        python -m src.content_based.main
+   ```
